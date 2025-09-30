@@ -243,6 +243,45 @@
         color: #e6eef6;
         font-size: 18px;
       }
+      .achievements-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      .achievement-card {
+        background: var(--surface);
+        border-radius: 1rem;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .achievement-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      }
+
+      .achievement-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 0.75rem;
+        margin-bottom: 0.75rem;
+        background: rgba(255, 255, 255, 0.05); /* fallback placeholder bg */
+      }
+
+      .achievement-card h4 {
+        margin: 0.5rem 0 0.25rem;
+        color: var(--text);
+      }
+
+      .achievement-card .sub {
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
     </style>
   </head>
   <body>
@@ -318,7 +357,12 @@
                     support the full operational workflow of construction
                     companies.
                   </p>
-                  <a style="font-size: 10px;" href="https://github.com/MOGAT0/engimanage.git" target="_blank">GitHub Link</a>
+                  <a
+                    style="font-size: 10px"
+                    href="https://github.com/MOGAT0/engimanage.git"
+                    target="_blank"
+                    >GitHub Link</a
+                  >
                   <div class="tags">
                     <span class="tag">Research</span
                     ><span class="tag">Full-stack</span>
@@ -335,7 +379,12 @@
                     it answers common development questions, explains GDScript
                     logic, and provides guidance on engine workflows
                   </p>
-                  <a style="font-size: 10px;" href="https://github.com/MOGAT0/godotAI.git" target="_blank">GitHub Link</a>
+                  <a
+                    style="font-size: 10px"
+                    href="https://github.com/MOGAT0/godotAI.git"
+                    target="_blank"
+                    >GitHub Link</a
+                  >
                   <div class="tags">
                     <span class="tag">Godot 4.3</span
                     ><span class="tag">AI</span>
@@ -350,7 +399,12 @@
                     A mobile POS system app designed for managing sales,
                     inventory, and daily reports.
                   </p>
-                  <a style="font-size: 10px;" href="https://github.com/MOGAT0/pos-mobileApplication.git" target="_blank">GitHub Link</a>
+                  <a
+                    style="font-size: 10px"
+                    href="https://github.com/MOGAT0/pos-mobileApplication.git"
+                    target="_blank"
+                    >GitHub Link</a
+                  >
                   <div class="tags">
                     <span class="tag">React Native</span
                     ><span class="tag">Mobile</span><span class="tag">POS</span>
@@ -362,9 +416,15 @@
                 <div class="meta">
                   <h3>Budgeting Application — Daily tracking of budget</h3>
                   <p class="sub">
-                    A simple budgeting Application to fit your allowance weather you are a student or a professional.
+                    A simple budgeting Application to fit your allowance weather
+                    you are a student or a professional.
                   </p>
-                  <a style="font-size: 10px;" href="https://github.com/MOGAT0/budgeting-app.git" target="_blank">GitHub Link</a>
+                  <a
+                    style="font-size: 10px"
+                    href="https://github.com/MOGAT0/budgeting-app.git"
+                    target="_blank"
+                    >GitHub Link</a
+                  >
                   <div class="tags">
                     <span class="tag">Java</span>
                   </div>
@@ -381,7 +441,12 @@
                     the server-client logic is separated for future deployment
                     on cloud platforms.
                   </p>
-                  <a style="font-size: 10px;" href="https://github.com/MOGAT0/unithead-3dShooter-multiplayer-Godot4.3.git" target="_blank">GitHub Link</a>
+                  <a
+                    style="font-size: 10px"
+                    href="https://github.com/MOGAT0/unithead-3dShooter-multiplayer-Godot4.3.git"
+                    target="_blank"
+                    >GitHub Link</a
+                  >
                   <div class="tags">
                     <span class="tag">Godot 4.3</span
                     ><span class="tag">RPCs</span
@@ -398,7 +463,12 @@
                     A cozy offline 2D platformer designed for smooth,
                     controller-friendly gameplay and challenging level design.
                   </p>
-                  <a style="font-size: 10px;" href="https://mogat0.itch.io/timetwist-demo" target="_blank">Demo Link</a>
+                  <a
+                    style="font-size: 10px"
+                    href="https://mogat0.itch.io/timetwist-demo"
+                    target="_blank"
+                    >Demo Link</a
+                  >
                   <div class="tags">
                     <span class="tag">Godot 4.3</span
                     ><span class="tag">2D</span>
@@ -412,42 +482,88 @@
                   <p class="sub">
                     Improve your typing accuracy and speed using this game
                   </p>
-                  <a style="font-size: 10px;" href="https://github.com/MOGAT0/keyboardwarior.git" target="_blank">GitHub Link</a>
+                  <a
+                    style="font-size: 10px"
+                    href="https://github.com/MOGAT0/keyboardwarior.git"
+                    target="_blank"
+                    >GitHub Link</a
+                  >
                   <div class="tags">
-                    <span class="tag">Python</span
-                    ><span class="tag">2D</span>
+                    <span class="tag">Python</span><span class="tag">2D</span>
                   </div>
                 </div>
               </article>
-
             </div>
           </section>
 
           <section class="card" id="achievements">
             <h2>Achievements</h2>
-            <div class="achievements">
+            <div class="achievements-grid">
+
               <div class="achievement-card">
-                <img src="" alt="Game Development Certificate" />
-                <h4>Game Development Certificate</h4>
+                <img src="assets/img/h4g (4).jpg"/>
+                <h4>Hack For Gov</h4>
                 <p class="sub">
-                  Awarded for completing a Godot-based game development course.
+                  Hack4Gove Aug. 18, 2023 - 2nd runner up
                 </p>
               </div>
+
               <div class="achievement-card">
-                <img src="" alt="Web Development Certificate" />
-                <h4>Web Development Certificate</h4>
+                <img src="assets/img/Certificate of Participation - (champion).jpg"/>
+                <h4>CITE Week Hackathon</h4>
                 <p class="sub">
-                  Recognized for excellence in full-stack and frontend web
-                  development.
+                  Champion in CITE Week Hackathon sept. 2024
                 </p>
               </div>
+
               <div class="achievement-card">
-                <img src="" alt="Research Recognition" />
-                <h4>Research Recognition</h4>
+                <img src="assets/img/gamejam.jpg"/>
+                <h4>GameJam - Calle real ST.</h4>
                 <p class="sub">
-                  Acknowledged for capstone work on EngiManage research paper.
+                  Best in narative & People's choice award
                 </p>
               </div>
+
+              <div class="achievement-card">
+                <img src="assets/img/stacktreck.jpg"/>
+                <h4>Stack League - Gold rush</h4>
+                <p class="sub">
+                  Participated in Stack league stack trek celestial gold rush - 2023
+                </p>
+              </div>
+
+              <div class="achievement-card">
+                <img src="assets/img/1722413454396.jpg"/>
+                <h4>Hack4Gov Year 3</h4>
+                <p class="sub">
+                  Participated in Hack for Gov Competition - 2023
+                </p>
+              </div>
+
+              <div class="achievement-card">
+                <img src="assets/img/S.J. MOGATO.jpg"/>
+                <h4>"G! Meet kita!" Animation Online Boothcamp</h4>
+                <p class="sub">
+                  8th day of august, 2023 via Google Gmeet
+                </p>
+              </div>
+
+              <div class="achievement-card">
+                <img src="assets/img/MOGATO_JS_PARTICIPATION_page-0001.jpg"/>
+                <h4>"JS Prom" JavaScript Programming</h4>
+                <p class="sub">
+                  13th day of april, 2023 at PHINMA - University of Iloilo
+                </p>
+              </div>
+
+              <div class="achievement-card">
+                <img src="assets/img/MOGATO_JS_COMPLETION_page-0001.jpg"/>
+                <h4>"JS Prom" JavaScript Programming - Completed</h4>
+                <p class="sub">
+                  Successfully Completing the JS prom javascript workshop
+                </p>
+              </div>
+
             </div>
           </section>
 
@@ -471,22 +587,20 @@
             <h2>Experiences</h2>
             <ul style="color: var(--muted); line-height: 1.6">
               <li>
-                (Freelance)
-                Developed <strong>QuizBee</strong> — a 2D educational game built
-                in Godot, designed to help kindergarten students learn through
-                fun, cozy, and interactive gameplay.
+                (Freelance) Developed <strong>QuizBee</strong> — a 2D
+                educational game built in Godot, designed to help kindergarten
+                students learn through fun, cozy, and interactive gameplay.
               </li>
               <li>
-                (Freelance)
-                Created a <strong>POS Mobile System</strong> — a point-of-sale
-                application for mobile devices, focusing on ease of use,
-                performance, and reliability for small business owners.
+                (Freelance) Created a <strong>POS Mobile System</strong> — a
+                point-of-sale application for mobile devices, focusing on ease
+                of use, performance, and reliability for small business owners.
               </li>
               <li>
-                (Full-stack Role)
-                Developed <strong>EngiManage</strong> (Capstone Project) — a project management system built for an engineering company
-                to enhance project tracking, and team collaboration
-                oversight.
+                (Full-stack Role) Developed
+                <strong>EngiManage</strong> (Capstone Project) — a project
+                management system built for an engineering company to enhance
+                project tracking, and team collaboration oversight.
               </li>
             </ul>
           </section>
@@ -534,10 +648,10 @@ const contact = {
               >
             </div> -->
 
-            <div style="margin-top: 14px">
+            <!-- <div style="margin-top: 14px">
               <h3>Download Resume</h3>
               <button id="dl" class="btn">Download CV (TXT)</button>
-            </div>
+            </div> -->
           </div>
 
           <!-- <div class="card" style="margin-top: 16px">
