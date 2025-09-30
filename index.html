@@ -103,11 +103,30 @@
         box-shadow: 0 6px 30px rgba(2, 6, 23, 0.6);
       }
 
+      /* Fix for About Me section responsiveness */
       .hero {
         display: flex;
+        flex-wrap: wrap;
         gap: 18px;
         align-items: flex-start;
       }
+
+      .hero aside {
+        flex: 1;
+        min-width: 260px;
+      }
+
+      /* Mobile adjustments */
+      @media (max-width: 768px) {
+        .hero {
+          flex-direction: column;
+        }
+
+        .hero aside {
+          width: 100% !important;
+        }
+      }
+
       .cta {
         margin-top: 14px;
       }
@@ -319,7 +338,7 @@
               <!-- <div class="mini-stats" style="margin-top:12px">
               <div class="stat"><b>Several</b><span>Indie game prototypes</span></div>
               <div class="stat"><b>College</b><span>Accepted (goal achieved)</span></div>
-            </div> -->
+              </div> -->
               <!-- <div class="cta">
                 <a class="btn" href="#projects">See projects</a>
                 <a class="ghost" style="margin-left: 8px" href="#contact"
@@ -499,41 +518,37 @@
           <section class="card" id="achievements">
             <h2>Achievements</h2>
             <div class="achievements-grid">
-
               <div class="achievement-card">
-                <img src="assets/img/h4g (4).jpg"/>
+                <img src="assets/img/h4g (4).jpg" />
                 <h4>Hack For Gov</h4>
-                <p class="sub">
-                  Hack4Gove Aug. 18, 2023 - 2nd runner up
-                </p>
+                <p class="sub">Hack4Gove Aug. 18, 2023 - 2nd runner up</p>
               </div>
 
               <div class="achievement-card">
-                <img src="assets/img/Certificate of Participation - (champion).jpg"/>
+                <img
+                  src="assets/img/Certificate of Participation - (champion).jpg"
+                />
                 <h4>CITE Week Hackathon</h4>
-                <p class="sub">
-                  Champion in CITE Week Hackathon sept. 2024
-                </p>
+                <p class="sub">Champion in CITE Week Hackathon sept. 2024</p>
               </div>
 
               <div class="achievement-card">
-                <img src="assets/img/gamejam.jpg"/>
+                <img src="assets/img/gamejam.jpg" />
                 <h4>GameJam - Calle real ST.</h4>
-                <p class="sub">
-                  Best in narative & People's choice award
-                </p>
+                <p class="sub">Best in narative & People's choice award</p>
               </div>
 
               <div class="achievement-card">
-                <img src="assets/img/stacktreck.jpg"/>
+                <img src="assets/img/stacktreck.jpg" />
                 <h4>Stack League - Gold rush</h4>
                 <p class="sub">
-                  Participated in Stack league stack trek celestial gold rush - 2023
+                  Participated in Stack league stack trek celestial gold rush -
+                  2023
                 </p>
               </div>
 
               <div class="achievement-card">
-                <img src="assets/img/1722413454396.jpg"/>
+                <img src="assets/img/1722413454396.jpg" />
                 <h4>Hack4Gov Year 3</h4>
                 <p class="sub">
                   Participated in Hack for Gov Competition - 2023
@@ -541,15 +556,13 @@
               </div>
 
               <div class="achievement-card">
-                <img src="assets/img/S.J. MOGATO.jpg"/>
+                <img src="assets/img/S.J. MOGATO.jpg" />
                 <h4>"G! Meet kita!" Animation Online Boothcamp</h4>
-                <p class="sub">
-                  8th day of august, 2023 via Google Gmeet
-                </p>
+                <p class="sub">8th day of august, 2023 via Google Gmeet</p>
               </div>
 
               <div class="achievement-card">
-                <img src="assets/img/MOGATO_JS_PARTICIPATION_page-0001.jpg"/>
+                <img src="assets/img/MOGATO_JS_PARTICIPATION_page-0001.jpg" />
                 <h4>"JS Prom" JavaScript Programming</h4>
                 <p class="sub">
                   13th day of april, 2023 at PHINMA - University of Iloilo
@@ -557,13 +570,12 @@
               </div>
 
               <div class="achievement-card">
-                <img src="assets/img/MOGATO_JS_COMPLETION_page-0001.jpg"/>
+                <img src="assets/img/MOGATO_JS_COMPLETION_page-0001.jpg" />
                 <h4>"JS Prom" JavaScript Programming - Completed</h4>
                 <p class="sub">
                   Successfully Completing the JS prom javascript workshop
                 </p>
               </div>
-
             </div>
           </section>
 
