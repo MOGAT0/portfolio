@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sam Jefferson Mogato — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Sam Jefferson Mogato — game & web developer. Godot, React Native, Express, Python, Java, PHP."
+    />
+    <style>
+      :root {
+        --bg: #0f1724;
+        --card: #0b1220;
+        --muted: #9aa4b2;
+        --accent: #2dd4bf;
+        --glass: rgba(255, 255, 255, 0.04);
+        --max-width: 1100px;
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial;
+        background: linear-gradient(180deg, #071026 0%, #071a2a 60%);
+        color: #e6eef6;
+        -webkit-font-smoothing: antialiased;
+        padding: 32px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .wrap {
+        width: 100%;
+        max-width: var(--max-width);
+      }
+      header {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        margin-bottom: 28px;
+      }
+      .avatar {
+        width: 96px;
+        height: 96px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, var(--accent), #60a5fa);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 28px;
+        color: #062024;
+      }
+      h1 {
+        margin: 0;
+        font-size: 28px;
+      }
+      .sub {
+        color: var(--muted);
+        margin-top: 6px;
+      }
+
+      nav {
+        margin-left: auto;
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 18px;
+        font-weight: 600;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 360px;
+        gap: 28px;
+      }
+      @media (max-width: 980px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .right-col {
+          order: 2;
+        }
+      }
+
+      .card {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.02),
+          rgba(255, 255, 255, 0.01)
+        );
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 30px rgba(2, 6, 23, 0.6);
+      }
+
+      .hero {
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+      }
+      .cta {
+        margin-top: 14px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 14px;
+        border-radius: 10px;
+        background: var(--accent);
+        color: #042023;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .ghost {
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        color: var(--muted);
+        padding: 8px 12px;
+        border-radius: 10px;
+      }
+
+      section {
+        margin-bottom: 18px;
+      }
+      h2 {
+        margin: 0 0 12px 0;
+      }
+      p {
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .skill {
+        background: var(--glass);
+        padding: 8px 10px;
+        border-radius: 8px;
+        color: #cfeff0;
+        font-weight: 600;
+      }
+
+      .projects {
+        display: grid;
+        gap: 12px;
+      }
+      .project {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .project .meta {
+        flex: 1;
+      }
+      .project h3 {
+        margin: 0;
+      }
+      .tags {
+        display: flex;
+        gap: 8px;
+        margin-top: 8px;
+      }
+      .tag {
+        font-size: 12px;
+        padding: 6px 8px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.02);
+        color: var(--muted);
+      }
+
+      .achievements {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .achievement-card {
+        background: var(--glass);
+        padding: 12px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .achievement-card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+        background: #0b1220;
+      }
+      .achievement-card h4 {
+        margin: 8px 0 4px 0;
+      }
+
+      .resume {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      footer {
+        margin-top: 22px;
+        color: var(--muted);
+        font-size: 13px;
+        text-align: center;
+      }
+
+      pre {
+        background: #041223;
+        padding: 12px;
+        border-radius: 8px;
+        overflow: auto;
+      }
+
+      .mini-stats {
+        display: flex;
+        gap: 14px;
+      }
+      .stat {
+        background: transparent;
+        color: var(--muted);
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .stat b {
+        display: block;
+        color: #e6eef6;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="avatar">SJ</div>
+        <div>
+          <h1>Sam Jefferson Mogato</h1>
+          <div class="sub">
+            Indie Game Developer & Software Developer — Godot, React Native,
+            Express, Python, Java, PHP
+          </div>
+          <div class="sub">21 years old · Philippines · Solo developer</div>
+        </div>
+        <!-- <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav> -->
+      </header>
+
+      <div class="grid">
+        <main>
+          <section class="card hero" id="about">
+            <div style="flex: 1">
+              <h2>About me</h2>
+              <p>
+                Hi — I'm Sam (Sam Jefferson Mogato). I'm a solo developer who
+                builds games and apps. I have experience in Godot Engine, React
+                Native, Express, PHP, Python, and backend work. I build
+                multiplayer features, animation systems, and multiplayer logic.
+                I prioritize clean, error-free code.
+              </p>
+              <!-- <div class="mini-stats" style="margin-top:12px">
+              <div class="stat"><b>Several</b><span>Indie game prototypes</span></div>
+              <div class="stat"><b>College</b><span>Accepted (goal achieved)</span></div>
+            </div> -->
+              <!-- <div class="cta">
+                <a class="btn" href="#projects">See projects</a>
+                <a class="ghost" style="margin-left: 8px" href="#contact"
+                  >Get in touch</a
+                >
+              </div> -->
+            </div>
+
+            <aside style="width: 300px">
+              <div class="card right-col">
+                <h3>Profile</h3>
+                <p><strong>Location:</strong> Philippines</p>
+                <p>
+                  <strong>Experience:</strong> Godot game dev, React/React
+                  Native, Express backend
+                </p>
+                <div style="margin-top: 10px">
+                  <h4>Goals</h4>
+                  <p class="sub">
+                    Build commercial-quality indie games, Software development.
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </section>
+
+          <section class="card" id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+              <article class="project card">
+                <div class="meta">
+                  <h3>EngiManage — Research & Capstone</h3>
+                  <p class="sub">
+                    It is a comprehensive project management system designed to
+                    support the full operational workflow of construction
+                    companies.
+                  </p>
+                  <a style="font-size: 10px;" href="https://github.com/MOGAT0/engimanage.git" target="_blank">GitHub Link</a>
+                  <div class="tags">
+                    <span class="tag">Research</span
+                    ><span class="tag">Full-stack</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project card">
+                <div class="meta">
+                  <h3>GodotAI — Chatbot Companion</h3>
+                  <p class="sub">
+                    It is a beginner-friendly mobile app that helps new Godot
+                    developers learn the engine more efficiently. Powered by AI,
+                    it answers common development questions, explains GDScript
+                    logic, and provides guidance on engine workflows
+                  </p>
+                  <a style="font-size: 10px;" href="https://github.com/MOGAT0/godotAI.git" target="_blank">GitHub Link</a>
+                  <div class="tags">
+                    <span class="tag">Godot 4.3</span
+                    ><span class="tag">AI</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project card">
+                <div class="meta">
+                  <h3>POS Mobile — Point of Sale System</h3>
+                  <p class="sub">
+                    A mobile POS system app designed for managing sales,
+                    inventory, and daily reports.
+                  </p>
+                  <a style="font-size: 10px;" href="https://github.com/MOGAT0/pos-mobileApplication.git" target="_blank">GitHub Link</a>
+                  <div class="tags">
+                    <span class="tag">React Native</span
+                    ><span class="tag">Mobile</span><span class="tag">POS</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project card">
+                <div class="meta">
+                  <h3>Budgeting Application — Daily tracking of budget</h3>
+                  <p class="sub">
+                    A simple budgeting Application to fit your allowance weather you are a student or a professional.
+                  </p>
+                  <a style="font-size: 10px;" href="https://github.com/MOGAT0/budgeting-app.git" target="_blank">GitHub Link</a>
+                  <div class="tags">
+                    <span class="tag">Java</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project card">
+                <div class="meta">
+                  <h3>UnitHead - Thirdperson shooter game</h3>
+                  <p class="sub">
+                    It is a third-person multiplayer shooter developed in Godot
+                    4.3, featuring a fully custom network sync system using pure
+                    RPCs. Designed with a dedicated server architecture in mind,
+                    the server-client logic is separated for future deployment
+                    on cloud platforms.
+                  </p>
+                  <a style="font-size: 10px;" href="https://github.com/MOGAT0/unithead-3dShooter-multiplayer-Godot4.3.git" target="_blank">GitHub Link</a>
+                  <div class="tags">
+                    <span class="tag">Godot 4.3</span
+                    ><span class="tag">RPCs</span
+                    ><span class="tag">Multiplayer</span>
+                    <span class="tag">3D</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project card">
+                <div class="meta">
+                  <h3>TimeTwist - 2d platformer game</h3>
+                  <p class="sub">
+                    A cozy offline 2D platformer designed for smooth,
+                    controller-friendly gameplay and challenging level design.
+                  </p>
+                  <a style="font-size: 10px;" href="https://mogat0.itch.io/timetwist-demo" target="_blank">Demo Link</a>
+                  <div class="tags">
+                    <span class="tag">Godot 4.3</span
+                    ><span class="tag">2D</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project card">
+                <div class="meta">
+                  <h3>KeyboardWarrior - A typing game</h3>
+                  <p class="sub">
+                    Improve your typing accuracy and speed using this game
+                  </p>
+                  <a style="font-size: 10px;" href="https://github.com/MOGAT0/keyboardwarior.git" target="_blank">GitHub Link</a>
+                  <div class="tags">
+                    <span class="tag">Python</span
+                    ><span class="tag">2D</span>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </section>
+
+          <section class="card" id="achievements">
+            <h2>Achievements</h2>
+            <div class="achievements">
+              <div class="achievement-card">
+                <img src="" alt="Game Development Certificate" />
+                <h4>Game Development Certificate</h4>
+                <p class="sub">
+                  Awarded for completing a Godot-based game development course.
+                </p>
+              </div>
+              <div class="achievement-card">
+                <img src="" alt="Web Development Certificate" />
+                <h4>Web Development Certificate</h4>
+                <p class="sub">
+                  Recognized for excellence in full-stack and frontend web
+                  development.
+                </p>
+              </div>
+              <div class="achievement-card">
+                <img src="" alt="Research Recognition" />
+                <h4>Research Recognition</h4>
+                <p class="sub">
+                  Acknowledged for capstone work on EngiManage research paper.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="card" id="skills">
+            <h2>Skills</h2>
+            <div class="skills" style="margin-top: 8px">
+              <span class="skill">Godot 4</span>
+              <span class="skill">Multiplayer Logic (RPCs)</span>
+              <span class="skill">React / React Native</span>
+              <span class="skill">JavaScript / Node / Express</span>
+              <span class="skill">Python</span>
+              <span class="skill">Java</span>
+              <span class="skill">PHP</span>
+              <span class="skill">SQL / MySQL</span>
+              <span class="skill">Blender (low-poly)</span>
+              <span class="skill">UI/UX & Prototyping</span>
+            </div>
+          </section>
+
+          <section class="card" id="experience">
+            <h2>Experiences</h2>
+            <ul style="color: var(--muted); line-height: 1.6">
+              <li>
+                (Freelance)
+                Developed <strong>QuizBee</strong> — a 2D educational game built
+                in Godot, designed to help kindergarten students learn through
+                fun, cozy, and interactive gameplay.
+              </li>
+              <li>
+                (Freelance)
+                Created a <strong>POS Mobile System</strong> — a point-of-sale
+                application for mobile devices, focusing on ease of use,
+                performance, and reliability for small business owners.
+              </li>
+              <li>
+                (Full-stack Role)
+                Developed <strong>EngiManage</strong> (Capstone Project) — a project management system built for an engineering company
+                to enhance project tracking, and team collaboration
+                oversight.
+              </li>
+            </ul>
+          </section>
+
+          <!-- <section class="card" id="extras">
+            <h2>Extras</h2>
+            <p class="sub">
+              If you'd like, I can provide: a downloadable resume, live demo
+              export (HTML build), or the source code for any project listed
+              above. Everything here is static — contact me to get repo links.
+            </p>
+
+            <pre><code>// Quick copyable contact snippet
+const contact = {
+  name: "Sam Jefferson Mogato",
+  email: "sam@example.com",
+  location: "Philippines"
+}
+</code></pre>
+          </section> -->
+        </main>
+
+        <aside class="right-col">
+          <div class="card">
+            <h2>Contact</h2>
+            <div class="contact-list">
+              <div>
+                <strong>Email:</strong>
+                <a href="mailto:sam@example.com">samjeffmogato@gmail.com</a>
+              </div>
+              <div><strong>Location:</strong> Philippines</div>
+              <div>
+                <strong>Availability:</strong> Open to freelance & collaboration
+              </div>
+            </div>
+
+            <!-- <div style="margin-top: 12px">
+              <h3>Quick links</h3>
+              <a class="ghost" href="#projects">Projects</a>
+              <a
+                class="ghost"
+                style="display: inline-block; margin-top: 8px"
+                href="#skills"
+                >Skills</a
+              >
+            </div> -->
+
+            <div style="margin-top: 14px">
+              <h3>Download Resume</h3>
+              <button id="dl" class="btn">Download CV (TXT)</button>
+            </div>
+          </div>
+
+          <!-- <div class="card" style="margin-top: 16px">
+            <h3>Notes</h3>
+            <p class="sub">
+              This static portfolio was generated from your session data: Godot
+              projects, React Native apps, Express backends, and research work.
+              Edit any text, swap the contact email, or add links to
+              repositories.
+            </p>
+          </div> -->
+        </aside>
+      </div>
+
+      <footer>
+        <!-- Built with HTML, CSS & JavaScript. — Generated for Sam Jefferson Mogato -->
+      </footer>
+    </div>
+
+    <script>
+      const dlBtn = document.getElementById("dl");
+      dlBtn.addEventListener("click", () => {
+        const text = `Sam Jefferson Mogato\nGame & Web Developer\n\nSkills:\n- Godot (GDScript)\n- Multiplayer (RPCs)\n- React / React Native\n- Node / Express / PHP / MySQL\n- Python, Java\n\nProjects:\n- Godot multiplayer demo (drop/pickup)\n- GodotAI Chatbot (Godot)\n- EngiManage (research)\n- POS Mobile (mobile POS)\n\nContact: sam@example.com\nLocation: Philippines`;
+        const blob = new Blob([text], { type: "text/plain" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "Sam_Jefferson_Mogato_CV.txt";
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+      });
+    </script>
+  </body>
+</html>
