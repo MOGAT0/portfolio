@@ -3,7 +3,7 @@
     "composite": true,
     "skipLibCheck": true,
     "module": "CommonJS",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true
   },
   "include": ["vite.config.js"]
