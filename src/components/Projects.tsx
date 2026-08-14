@@ -25,7 +25,7 @@ const Projects = () => {
       title: 'POS Mobile — Point of Sale System',
       year: '',
       description: 'A mobile POS system app designed for managing sales, inventory, and daily reports.',
-      link: 'https://github.com/MOGAT0/pos-mobile.git',
+      link: 'https://github.com/MOGAT0/pos-mobileApplication',
       tags: ['React Native', 'Mobile', 'POS']
     },
     {
