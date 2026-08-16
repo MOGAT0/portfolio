@@ -6,9 +6,9 @@ const Contact = () => {
       link: 'mailto:samjeffmogato@gmail.com'
     },
     {
-      label: 'Facebook',
+      label: 'LinkedIn',
       value: 'Sam Jefferson',
-      link: 'https://www.facebook.com/sam.jefferson.741540'
+      link: 'https://linkedin.com/in/sam-jefferson-mogato-b8a786294/'
     },
     {
       label: 'GitHub',
