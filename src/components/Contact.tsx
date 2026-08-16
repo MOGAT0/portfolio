@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <section id="contact" className="glass-card p-8">
       <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
-        <span className="text-gold-400">Get in</span> Touch
+        <span className="text-gold-400 font-valorax">Get in</span> <span className="font-valorax">Touch</span>
       </h2>
       <div className="grid md:grid-cols-2 gap-4">
         {contactInfo.map((contact, index) => (

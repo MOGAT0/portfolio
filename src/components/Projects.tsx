@@ -2,24 +2,43 @@ const Projects = () => {
   const projects = [
     {
       title: 'EngiManage',
-      year: '',
+      year: '2026',
       description: 'A project management platform built for engineering companies to enhance project tracking and team collaboration.',
       link: 'https://github.com/MOGAT0/engimanage.git',
-      tags: ['Full-stack', 'React Native', 'Express js', 'Node js']
+      tags: ['React Native', 'Express js', 'Node js', 'PostgreSQL', 'Railway', 'Supabase']
     },
     {
-      title: 'QuizBee',
-      year: '',
-      description: 'A 2D educational game built in Godot, designed to help kindergarten students learn through fun, cozy, and interactive gameplay.',
-      link: 'https://github.com/MOGAT0/quizbee.git',
-      tags: ['Godot 4', 'Game Development', 'Educational']
+      title: 'MeTube - Video To note Tool',
+      year: '2026',
+      description: `Built an intelligent study platform featuring a Next.js frontend and a Python backend 
+      that processes video transcripts using AI. Automated the generation of structured study notes, 
+      drastically reducing manual note taking time.`,
+      link: '',
+      tags: ['Next.js','Node.js','Express','Python','Clerk','Drizzle','Prisma']
+    },
+    {
+      title: 'POS Mobile',
+      year: '2025',
+      description: 'Developed a mobile Point-of-Sale (POS) application using React Native, Node.js and PostgreSQL to streamline retail checkout operations for small business owners.',
+      link: '',
+      tags: ['React Native','Expo','Express.js','Node.js','PostgreSQL', 'ZeroTier One']
+    },
+    {
+      title: 'GG - "Gasto Ginagmay" (Spend Less)',
+      year: '2024',
+      description: `Developed a personal finance application in Java to track daily expenses
+      and manage personal budgets. Implemented logic to categorize
+      spending and provide real-time budget tracking, helping users achieve
+      financial goals.`,
+      link: '',
+      tags: ['Java','MySQL']
     }
   ]
 
   return (
     <section id="projects" className="glass-card p-8">
       <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
-        <span className="text-gold-400">Featured</span> Projects
+        <span className="text-gold-400 font-valorax">Featured</span> <span className="font-valorax">Projects</span>
       </h2>
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project, index) => (

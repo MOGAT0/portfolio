@@ -8,18 +8,17 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import VantaBackground from './components/VantaBackground'
 
-// Main App component with Vanta background and updated layout
 function App() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-transparent text-white">
       <VantaBackground />
       <Header />
       <main>
         <Hero />
         <div className="max-w-6xl mx-auto px-4 py-8 space-y-8">
-          <Skills />
           <Experience />
           <Projects />
+          <Skills />
           <Achievements />
           <Contact />
         </div>

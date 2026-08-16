@@ -19,11 +19,8 @@ const VantaBackground = () => {
 
     const initVanta = async () => {
       try {
-        // Load Three.js and Vanta.js Net effect
         await loadScript('https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js')
         await loadScript('https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js')
-
-        // Initialize Vanta Net effect after scripts are loaded
         if (window.VANTA && window.VANTA.NET && vantaRef.current) {
           vantaEffectRef.current = window.VANTA.NET({
             el: vantaRef.current,
@@ -34,7 +31,10 @@ const VantaBackground = () => {
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            color: 0x3fffe8, // Teal color matching inspiration site
+            color: 0xfffe00,
+            points: 20.00,
+            maxDistance: 10.00,
+            spacing: 20.00,
             backgroundColor: 0x000000
           })
         }
