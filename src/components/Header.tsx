@@ -1,3 +1,4 @@
+import ProfileImg from '../assets/img/profile.jpg'
 import { useState, useEffect } from 'react'
 
 const Header = () => {
@@ -21,13 +22,15 @@ const Header = () => {
     >
       <div className="flex items-center justify-between py-6">
         <div className="flex items-center gap-4">
-          <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center font-bold text-2xl text-black shadow-lg shadow-gold-500/20">
-            SJ
-          </div>
+          <img 
+            src={ProfileImg} 
+            alt="Sam Jefferson Mogato" 
+            className="w-16 h-16 rounded-full object-cover border-2 border-gold-500 shadow-md shadow-gold-500/20" 
+          />
           <div>
             <h1 className="text-2xl font-bold text-white">Sam Jefferson Mogato</h1>
             <p className="text-gray-400 text-sm">
-              Software Engineer & Game Developer
+              Software Developer & Game Developer
             </p>
             <p className="text-gold-400 text-xs mt-1">
               Iloilo City, Philippines
@@ -42,16 +45,28 @@ const Header = () => {
             About
           </a>
           <a
-            href="#skills"
+            href="#experience"
             className="text-gray-400 hover:text-gold-400 transition-colors font-medium"
           >
-            Skills
+            Experience
           </a>
           <a
             href="#projects"
             className="text-gray-400 hover:text-gold-400 transition-colors font-medium"
           >
             Projects
+          </a>
+          <a
+            href="#skills"
+            className="text-gray-400 hover:text-gold-400 transition-colors font-medium"
+          >
+            Skills
+          </a>
+          <a
+            href="#education"
+            className="text-gray-400 hover:text-gold-400 transition-colors font-medium"
+          >
+            Education
           </a>
           <a
             href="#contact"

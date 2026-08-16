@@ -53,9 +53,9 @@ const Achievements = () => {
   ]
 
   return (
-    <section id="achievements" className="glass-card p-8">
+    <section id="education" className="glass-card p-8">
       <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
-        <span className="text-gold-400">Education</span> & Certification
+        <span className="text-gold-400 font-valorax">Education</span> <span className='font-valorax'>& Certification</span>
       </h2>
 
 {/* Added a styled container to separate the education details from the header and achievements grid */}

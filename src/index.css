@@ -36,4 +36,5 @@
   .gold-gradient {
     @apply bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent;
   }
+
 }

@@ -9,7 +9,7 @@ const Hero = () => {
         </h1>
         <TypeAnimation
           sequence={[
-            'Software Engineer',
+            'Software Developer',
             1000,
             'Game Developer',
             1000
@@ -24,7 +24,9 @@ const Hero = () => {
           Iloilo City, Philippines
         </p>
         <p className="text-gray-300 leading-relaxed max-w-2xl mx-auto mb-8">
-          IT Graduate with a passion for full-stack web development and game design. Experienced in building robust systems using Java, JavaScript, Python, Next.js, and Node.js.
+          Detail oriented Software Developer and Information Technology graduate (Cum Laude) with hands-on experience in
+          fullstack web and mobile development. Skilled in building reliable applications . Good at working within a team to
+          complete the software development life cycle (SDLC) and deliver secure, user-friendly solutions.
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <a
