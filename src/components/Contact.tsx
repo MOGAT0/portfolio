@@ -33,7 +33,7 @@ const Contact = () => {
   ]
 
   return (
-    <section id="contact" className="bg-gradient-to-br from-gray-900/50 to-black border border-gold-500/10 rounded-2xl p-8 backdrop-blur-sm">
+    <section id="contact" className="glass-card p-8">
       <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
         <span className="text-gold-400">Get in</span> Touch
       </h2>

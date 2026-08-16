@@ -1,33 +1,22 @@
+// Updated Experience section with new content from CV
 const Experience = () => {
   const experiences = [
     {
-      company: 'GS Food Products Trading',
-      role: 'Mobile Developer',
-      description: 'Designed and built a mobile Point-of-Sale (POS) applicationmade specifically to help small business owners, speeding up checkout time.',
-      year : 'Apr 2025 - Jul 2026'
+      company: 'Reed Elsevier Philippines',
+      role: 'Data Encoder',
+      description: 'Data encoding and management responsibilities.',
+      year: 'Apr 2026 - Present'
     },
     {
       company: 'Prometheus Enterprise',
       role: 'Software Engineer Intern',
       description: 'Contributed to the development of the e-notaryo project, a web notary platform. My responsibilities included building, integrating, and testing software features to ensure the platform was secure and user-friendly.',
-      year : 'Nov 2025 - Mar 2026'
-    },
-    {
-      company: 'Capstone Project',
-      role: 'Full-stack',
-      description: 'A project management system built for an engineering company to enhance project tracking, and team collaboration.',
-      year : '2025 - 2026'
-    },
-    {
-      company: 'Freelance',
-      role: 'Game Developer',
-      description: 'A 2D educational game built in Godot, designed to help kindergarten students learn through fun, cozy, and interactive gameplay.',
-      year : '2024'
-    },
+      year: '2025 - Mar 2026'
+    }
   ]
 
   return (
-    <section id="experience" className="bg-gradient-to-br from-gray-900/50 to-black border border-gold-500/10 rounded-2xl p-8 backdrop-blur-sm">
+    <section id="experience" className="glass-card p-8">
       <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
         <span className="text-gold-400">Work</span> Experience
       </h2>

@@ -1,65 +1,23 @@
 const Projects = () => {
   const projects = [
     {
-      title: 'MeTube — AI video-to-notes tool',
-      year: '2025',
-      description: 'A full-stack study platform built with Next.js. I engineered a Python-based system to automatically fetch video transcripts, which are then processed by an AI model to generate structured, searchable notes. This transforms long-form YouTube content into an efficient learning tool for students.',
-      link: 'https://github.com/MOGAT0/MeTube',
-      tags: ['Next Js', 'Python', 'Clerk', 'Drizzle', 'AI Model']
-    },
-    {
-      title: 'EngiManage — Research & Capstone',
+      title: 'EngiManage',
       year: '',
-      description: 'It is a comprehensive project management system designed to support the full operational workflow of construction companies.',
+      description: 'A project management platform built for engineering companies to enhance project tracking and team collaboration.',
       link: 'https://github.com/MOGAT0/engimanage.git',
-      tags: ['Research', 'Full-stack', 'React Native', 'Express js', 'Node js']
+      tags: ['Full-stack', 'React Native', 'Express js', 'Node js']
     },
     {
-      title: 'GodotAI — Chatbot Companion',
+      title: 'QuizBee',
       year: '',
-      description: 'It is a beginner-friendly mobile app that helps new Godot developers learn the engine more efficiently. Powered by AI, it answers common development questions, explains GDScript logic, and provides guidance on engine workflows',
-      link: 'https://github.com/MOGAT0/godotAI.git',
-      tags: ['Godot 4.3', 'AI']
-    },
-    {
-      title: 'POS Mobile — Point of Sale System',
-      year: '',
-      description: 'A mobile POS system app designed for managing sales, inventory, and daily reports.',
-      link: 'https://github.com/MOGAT0/pos-mobileApplication',
-      tags: ['React Native', 'Mobile', 'POS']
-    },
-    {
-      title: 'Budgeting Application — Daily tracking of budget',
-      year: '',
-      description: 'A simple budgeting Application to fit your allowance weather you are a student or a professional.',
-      link: 'https://github.com/MOGAT0/budgeting-app.git',
-      tags: ['Java']
-    },
-    {
-      title: 'UnitHead - Thirdperson shooter game',
-      year: '',
-      description: 'It is a third-person multiplayer shooter developed in Godot 4.3, featuring a fully custom network sync system using pure RPCs. Designed with a dedicated server architecture in mind, the server-client logic is separated for future deployment on cloud platforms.',
-      link: 'https://github.com/MOGAT0/unithead-3dShooter-multiplayer-Godot4.3.git',
-      tags: ['Godot 4.3', 'Multiplayer', '3D']
-    },
-    {
-      title: 'TimeTwist - 2d platformer game',
-      year: '',
-      description: 'A cozy offline 2D platformer designed for smooth, controller-friendly gameplay and challenging level design.',
-      link: 'https://mogat0.itch.io/timetwist-demo',
-      tags: ['Godot 4.3', '2D']
-    },
-    {
-      title: 'KeyboardWarrior - A typing game',
-      year: '',
-      description: 'Improve your typing accuracy and speed using this game',
-      link: 'https://github.com/MOGAT0/keyboardwarior.git',
-      tags: ['Python', '2D']
+      description: 'A 2D educational game built in Godot, designed to help kindergarten students learn through fun, cozy, and interactive gameplay.',
+      link: 'https://github.com/MOGAT0/quizbee.git',
+      tags: ['Godot 4', 'Game Development', 'Educational']
     }
   ]
 
   return (
-    <section id="projects" className="bg-gradient-to-br from-gray-900/50 to-black border border-gold-500/10 rounded-2xl p-8 backdrop-blur-sm">
+    <section id="projects" className="glass-card p-8">
       <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
         <span className="text-gold-400">Featured</span> Projects
       </h2>

@@ -18,7 +18,15 @@ module.exports = {
           700: '#99760f',
           800: '#826210',
           900: '#6d5311',
+        },
+        cyan: {
+          400: '#3fffe8',
+          500: '#22d3ee',
+          600: '#0891b2',
         }
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       }
     },
   },

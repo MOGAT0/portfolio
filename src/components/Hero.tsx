@@ -1,26 +1,39 @@
+// Updated Hero section with Vanta background integration and new personal content
 const Hero = () => {
   return (
-    <section id="about" className="bg-gradient-to-br from-gray-900/50 to-black border border-gold-500/10 rounded-2xl p-8 backdrop-blur-sm">
-      <div>
-        <h2 className="text-3xl font-bold text-white mb-4 flex items-center gap-2">
-          <span className="text-gold-400">About</span> Me
-        </h2>
-        <p className="text-gray-300 leading-relaxed mb-4">
-          Hi — I'm Sam Jefferson Mogato. Detail-oriented Software Engineer and Information Technology graduate (Cum Laude) with hands-on experience in fullstack web and mobile development. Skilled in building reliable applications using Java, Python, PHP, C++, JavaScript, TypeScript, React, and
-          Node.js. Good at working within a team to complete the software development life cycle (SDLC) and deliver secure, scalable solutions.
+    <section id="about" className="min-h-screen flex items-center justify-center relative px-4">
+      <div className="max-w-4xl mx-auto text-center z-10">
+        <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
+          Sam Jefferson Mogato
+        </h1>
+        <p className="text-2xl md:text-3xl text-gray-300 mb-2">
+          Software Engineer & Game Developer
         </p>
-        <div className="flex gap-4 mt-6">
+        <p className="text-lg text-gray-400 mb-8">
+          Iloilo City, Philippines
+        </p>
+        <p className="text-gray-300 leading-relaxed max-w-2xl mx-auto mb-8">
+          IT Graduate with a passion for full-stack web development and game design. Experienced in building robust systems using Java, JavaScript, Python, Next.js, and Node.js.
+        </p>
+        <div className="flex gap-4 justify-center flex-wrap">
           <a
             href="#projects"
-            className="px-6 py-3 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-bold rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300 shadow-lg shadow-gold-500/20"
+            className="px-8 py-3 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-bold rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300 shadow-lg shadow-gold-500/20"
           >
             View Projects
           </a>
           <a
             href="#contact"
-            className="px-6 py-3 border border-gold-500/30 text-gold-400 font-semibold rounded-lg hover:bg-gold-500/10 transition-all duration-300"
+            className="px-8 py-3 border border-gold-500/30 text-gold-400 font-semibold rounded-lg hover:bg-gold-500/10 transition-all duration-300"
           >
             Get in Touch
+          </a>
+          <a
+            href="/Mogato_cv@latest.pdf"
+            download
+            className="px-8 py-3 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
+          >
+            Download CV
           </a>
         </div>
       </div>

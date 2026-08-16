@@ -6,4 +6,21 @@
   body {
     @apply bg-black text-white antialiased;
   }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Modern glassmorphism effect */
+  .glass-card {
+    @apply bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl;
+  }
+  
+  /* Gold gradient text */
+  .gold-gradient {
+    @apply bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent;
+  }
 }

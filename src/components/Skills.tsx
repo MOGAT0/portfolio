@@ -1,3 +1,4 @@
+// Updated Skills section based on CV content
 const Skills = () => {
   const skillCategories = [
     {
@@ -5,15 +6,11 @@ const Skills = () => {
       skills: [
         {
           subcategory: 'Languages & Frameworks',
-          items: ['JavaScript/TypeScript', 'React/Next.js', 'Vue.js', 'React Native']
+          items: ['JavaScript/TypeScript', 'React/Next.js', 'React Native']
         },
         {
           subcategory: 'Styling & UI',
-          items: ['HTML/CSS (Tailwind, Bootstrap)', 'UI/UX Prototyping']
-        },
-        {
-          subcategory: 'Build Tools',
-          items: ['Vite']
+          items: ['HTML/CSS', 'Tailwind CSS', 'UI/UX Prototyping']
         }
       ]
     },
@@ -22,52 +19,40 @@ const Skills = () => {
       skills: [
         {
           subcategory: 'Languages',
-          items: ['Python', 'Java', 'C++', 'PHP']
+          items: ['Java', 'Python', 'PHP']
         },
         {
           subcategory: 'Frameworks & Runtimes',
-          items: ['Node.js/Express', 'Spring Boot']
+          items: ['Node.js', 'Express']
         }
       ]
     },
     {
-      category: 'Databases & ORM',
+      category: 'Game Development',
       skills: [
         {
-          subcategory: 'Relational Databases',
-          items: ['PostgreSQL', 'MySQL']
+          subcategory: 'Game Engines',
+          items: ['Godot Engine']
         },
         {
-          subcategory: 'NoSQL Databases',
-          items: ['MongoDB']
-        },
-        {
-          subcategory: 'Data Modeling',
-          items: ['Prisma ORM', 'SQL']
+          subcategory: 'Game Development',
+          items: ['2D Game Development', 'Educational Games']
         }
       ]
     },
     {
-      category: 'DevOps & Tools',
+      category: 'Tools & Platforms',
       skills: [
         {
-          subcategory: 'Version Control',
-          items: ['Git/GitHub']
-        },
-        {
-          subcategory: 'Containerization & Orchestration',
-          items: ['Docker', 'Kubernetes']
-        },
-        {
-          subcategory: 'Development Environments & Workflow',
-          items: ['VS Code', 'n8n']
+          subcategory: 'Development Tools',
+          items: ['Git/GitHub', 'VS Code']
         }
       ]
     }
   ]
 
   return (
-    <section id="skills" className="bg-gradient-to-br from-gray-900/50 to-black border border-gold-500/10 rounded-2xl p-8 backdrop-blur-sm">
+    <section id="skills" className="glass-card p-8">
       <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-2">
         <span className="text-gold-400">Technical</span> Skills
       </h2>
