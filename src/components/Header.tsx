@@ -97,7 +97,7 @@ const Header = () => {
             Contact
           </a>
           <a
-            href="/Mogato_cv@latest.pdf"
+            href="/public/Mogato_cv@latest.pdf"
             download
             className="px-4 py-2 border border-gold-500/30 text-gold-400 font-semibold rounded-lg hover:bg-gold-500/10 transition-all duration-300 text-sm"
           >
@@ -114,7 +114,7 @@ const Header = () => {
           <a href="#education" onClick={handleMobileNavClick} className="text-gray-400 hover:text-gold-400 transition-colors font-medium text-lg">Education</a>
           <a href="#contact" onClick={handleMobileNavClick} className="text-gray-400 hover:text-gold-400 transition-colors font-medium text-lg">Contact</a>
           <a
-            href="/Mogato_cv@latest.pdf"
+            href="/public/Mogato_cv@latest.pdf"
             download
             onClick={handleMobileNavClick}
             className="px-6 py-2 border border-gold-500/30 text-gold-400 font-semibold rounded-lg hover:bg-gold-500/10 transition-all duration-300"
