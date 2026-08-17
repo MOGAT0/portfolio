@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* New code: Defining the Valorax custom font */
 @font-face {
   font-family: 'Valorax';
   src: url('./assets/font/Valorax-lg25V.otf') format('opentype');
@@ -10,7 +9,6 @@
   font-style: normal;
 }
 
-/* New code: Creating a utility class for the font */
 .font-valorax {
   font-family: 'Valorax', sans-serif;
 }
@@ -19,7 +17,6 @@
   body {
     @apply bg-black text-white antialiased;
   }
-  
   /* Smooth scrolling */
   html {
     scroll-behavior: smooth;

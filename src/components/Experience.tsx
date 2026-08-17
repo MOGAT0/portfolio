@@ -47,7 +47,7 @@ const Experience = () => {
 
   return (
     <section ref={containerRef} id="experience" className="bg-transparent min-h-screen py-16 px-4 relative overflow-hidden text-white font-sans">
-      <h2 className="text-3xl font-bold text-white mb-6 flex items-center justify-center gap-2">
+      <h2 className="text-[clamp(1.5rem,4vw+1rem,3rem)] font-bold text-white mb-6 flex items-center gap-2 flex-wrap">
         <span className="text-gold-400 font-valorax">Professional</span> <span className="font-valorax">Experience</span>
       </h2>
       <div className="max-w-6xl mx-auto relative">

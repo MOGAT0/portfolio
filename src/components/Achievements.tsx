@@ -54,8 +54,8 @@ const Achievements = () => {
 
   return (
     <section id="education" className="glass-card p-8">
-      <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
-        <span className="text-gold-400 font-valorax">Education</span> <span className='font-valorax'>& Certification</span>
+      <h2 className="text-[clamp(1.5rem,4vw+1rem,3rem)] font-bold text-white mb-6 flex items-center gap-2 flex-wrap">
+        <span className="text-gold-400 font-valorax">Education</span> <span className="font-valorax">& Certification</span>
       </h2>
 
       <div className="bg-black/40 border border-gold-500/20 rounded-xl p-6 mb-10 flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all hover:border-gold-500/40">

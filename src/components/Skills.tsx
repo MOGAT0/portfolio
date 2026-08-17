@@ -64,7 +64,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="glass-card p-8">
-      <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-2">
+      <h2 className="text-[clamp(1.5rem,4vw+1rem,3rem)] font-bold text-white mb-6 flex items-center gap-2 flex-wrap">
         <span className="text-gold-400 font-valorax">Technical</span> <span className="font-valorax">Skills</span>
       </h2>
       <div className="grid md:grid-cols-2 gap-8">

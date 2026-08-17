@@ -4,9 +4,9 @@ const Hero = () => {
   return (
     <section id="about" className="min-h-screen flex items-center justify-center relative px-4">
       <div className="max-w-4xl mx-auto text-center z-10">
-        <h1 className="text-5xl font-bold text-white mb-4 font-valorax">
-          Sam Jefferson Mogato
-        </h1>
+        <h2 className="text-[clamp(1.5rem,4vw+1rem,3rem)] font-bold text-white mb-6 flex items-center gap-2 flex-wrap">
+          <span className=" font-valorax">Sam Jefferson Mogato</span>
+        </h2>
         <TypeAnimation
           sequence={[
             'Software Developer',
