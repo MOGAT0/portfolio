@@ -42,7 +42,7 @@ const Hero = () => {
             Get in Touch
           </a>
           <a
-            href="/public/Mogato_cv@latest.pdf"
+            href="/Mogato_cv@latest.pdf"
             download
             className="px-8 py-3 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300"
           >
