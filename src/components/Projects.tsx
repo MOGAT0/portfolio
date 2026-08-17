@@ -1,3 +1,5 @@
+import { Svgicon, IconName } from "./SvgIcon"
+
 const Projects = () => {
   const projects = [
     {
@@ -34,6 +36,30 @@ const Projects = () => {
       tags: ['Java','MySQL']
     }
   ]
+  const getIconForTag = (tag: string): IconName | null => {
+    const normalized = tag.toLowerCase().replace(/[^a-z0-9]/g, '');
+    
+    const iconMap: Record<string, IconName> = {
+      'reactnative': 'reactnative',
+      'expressjs': 'express',
+      'express': 'express',
+      'nodejs': 'nodejs',
+      'postgresql': 'postgresql',
+      'railway': 'railway',
+      'supabase': 'supabase',
+      'nextjs': 'nextjs',
+      'python': 'python',
+      'clerk': 'clerk',
+      'drizzle': 'drizzle',
+      'prisma': 'prisma',
+      'expo': 'expo',
+      'zerotierone': 'zerotier',
+      'java': 'java',
+      'mysql': 'mysql',
+    };
+    
+    return iconMap[normalized] || null;
+  };
 
   return (
     <section id="projects" className="glass-card p-8">
@@ -80,15 +106,29 @@ const Projects = () => {
                 />
               </svg>
             </a>
+            
             <div className="flex flex-wrap gap-2 mt-4">
-              {project.tags.map((tag, tagIndex) => (
-                <span
-                  key={tagIndex}
-                  className="text-xs px-3 py-1 bg-gold-500/10 border border-gold-500/20 rounded-full text-gold-300"
-                >
-                  {tag}
-                </span>
-              ))}
+              {project.tags.map((tag, tagIndex) => {
+                const mappedIcon = getIconForTag(tag);
+                
+                return (
+                  <span
+                    key={tagIndex}
+                    className="flex items-center gap-1.5 text-xs px-3 py-1 bg-gold-500/10 border border-gold-500/20 rounded-full text-gold-300"
+                  >
+                    {mappedIcon ? (
+                      <Svgicon name={mappedIcon} size={14} />
+                    ) : (
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                      </svg>
+                    )}
+                    {tag}
+                  </span>
+                );
+              })}
             </div>
           </div>
         ))}

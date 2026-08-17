@@ -58,11 +58,8 @@ const Achievements = () => {
         <span className="text-gold-400 font-valorax">Education</span> <span className='font-valorax'>& Certification</span>
       </h2>
 
-{/* Added a styled container to separate the education details from the header and achievements grid */}
       <div className="bg-black/40 border border-gold-500/20 rounded-xl p-6 mb-10 flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all hover:border-gold-500/40">
         <div className="flex items-start gap-4">
-          
-          {/* Added an SVG icon placeholder for a graduation cap */}
           <div className="p-3 bg-gold-500/10 rounded-lg text-gold-400 shrink-0">
             <svg 
               className="w-8 h-8" 
@@ -77,7 +74,6 @@ const Achievements = () => {
             </svg>
           </div>
           
-          {/* Styled the text hierarchy to highlight the degree and university */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-1">Phinma University of Iloilo</h3>
             <p className="text-gold-400 font-medium">
@@ -87,7 +83,6 @@ const Achievements = () => {
           </div>
         </div>
         
-        {/* Styled the graduation year as a distinct badge aligned to the right on larger screens */}
         <div className="inline-flex items-center px-4 py-2 bg-white/5 border border-white/10 rounded-full text-gray-300 text-sm font-semibold w-fit mt-2 md:mt-0 shadow-inner">
           Finished 2026
         </div>

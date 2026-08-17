@@ -1,27 +1,39 @@
 "use client";
 
+import { Svgicon, IconName } from './SvgIcon';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
+interface ExperienceItem {
+  company: string;
+  role: string;
+  description: string;
+  year: string;
+  iconName : IconName
+}
+
 const Experience = () => {
-  const experiences = [
+  const experiences : ExperienceItem[] = [
     {
       company: 'Reed Elsevier Philippines',
       role: 'Data Entry & Control Coordinator',
       description: 'Process and verify high volumes of complex records, ensuring maximum system accuracy and data integrity.',
-      year: 'Apr 2026 - Present'
+      year: 'Apr 2026 - Present',
+      iconName : 'encoder'
     },
     {
       company: 'GS Food Products Trading',
       role: 'Freelance Developer',
       description: 'Engineered an end-to-end mobile POS solution specifically designed to empower small business owners with seamless transaction handling. Optimized stock monitoring by implementing automated inventory tracking, significantly cutting down manual operational hours.',
-      year: 'Apr 2025 - Jul 2026'
+      year: 'Apr 2025 - Jul 2026',
+      iconName : 'mobiledeveloper'
     },
     {
       company: 'Prometheus Enterprise',
       role: 'Software Engineer Intern',
       description: 'Contributed to the development of the e-notaryo project, a web notary platform. My responsibilities included building, integrating, and testing software features to ensure the platform was secure and user-friendly.',
-      year: 'Nov 2025 - Mar 2026'
+      year: 'Nov 2025 - Mar 2026',
+      iconName : 'code'
     },
   ];
 
@@ -50,6 +62,7 @@ const Experience = () => {
           {experiences.map((exp, index) => {
             const isEven = index % 2 === 0;
             const stepNumber = String(index + 1).padStart(2, '0');
+            const mappedIcon = exp.iconName;
 
             return (
               <div key={index} className={`flex flex-col md:flex-row items-center justify-between w-full ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
@@ -64,11 +77,10 @@ const Experience = () => {
                     </div>
 
                     <div className="flex justify-center mb-4">
-                      <div className="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center">
   
-                        <svg className="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
+                        <Svgicon name={mappedIcon}/>
+
                       </div>
                     </div>
 

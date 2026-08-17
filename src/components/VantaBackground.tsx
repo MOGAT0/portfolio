@@ -1,12 +1,10 @@
 import { useEffect, useRef } from 'react'
 
-// Vanta.js Net effect background component with proper cleanup
 const VantaBackground = () => {
   const vantaRef = useRef<HTMLDivElement>(null)
   const vantaEffectRef = useRef<{ destroy: () => void } | null>(null)
 
   useEffect(() => {
-    // Load Vanta.js scripts dynamically
     const loadScript = (src: string): Promise<void> => {
       return new Promise((resolve, reject) => {
         const script = document.createElement('script')
