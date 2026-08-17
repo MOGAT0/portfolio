@@ -15,14 +15,14 @@ const Projects = () => {
       description: `Built an intelligent study platform featuring a Next.js frontend and a Python backend 
       that processes video transcripts using AI. Automated the generation of structured study notes, 
       drastically reducing manual note taking time.`,
-      link: '',
+      link: 'https://github.com/MOGAT0/MeTube',
       tags: ['Next.js','Node.js','Express','Python','Clerk','Drizzle','Prisma']
     },
     {
       title: 'POS Mobile',
       year: '2025',
       description: 'Developed a mobile Point-of-Sale (POS) application using React Native, Node.js and PostgreSQL to streamline retail checkout operations for small business owners.',
-      link: '',
+      link: 'https://github.com/MOGAT0/pos-mobileApplication',
       tags: ['React Native','Expo','Express.js','Node.js','PostgreSQL', 'ZeroTier One']
     },
     {
@@ -32,7 +32,7 @@ const Projects = () => {
       and manage personal budgets. Implemented logic to categorize
       spending and provide real-time budget tracking, helping users achieve
       financial goals.`,
-      link: '',
+      link: 'https://github.com/MOGAT0/budgeting-app',
       tags: ['Java','MySQL']
     }
   ]

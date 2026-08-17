@@ -12,43 +12,43 @@ const Achievements = () => {
       title: 'Hack4Gov Year 2',
       description: 'Hack4Gov Aug. 18, 2023 - 2nd runner up',
       img: h4g2Img,
-      link: ''  
+      link: 'https://drive.google.com/file/d/1kn1m52ZZb8syfQOwTukdJRr8cNtT5qSb/view?usp=sharing'  
     },
     {
       title: 'Hack4Gov Year 3',
       description: 'Participated in Hack for Gov Competition - 2024',
       img: h4g3Img,
-      link: ''  
+      link: 'https://drive.google.com/file/d/1cpwX631mW2c3bdBcrMsYar2ejfdYvxaU/view?usp=sharing'  
     },
     {
       title: 'Hack4Gov Year 4',
       description: '4th Placer in Hack for Gov Competition - 2025',
       img: h4g4Img,
-      link: ''  
+      link: 'https://drive.google.com/file/d/17_GKLtgj65HYDEmjAVdSlOZ62Eu815u5/view?usp=sharing'  
     },
     {
       title: 'CITE Week Hackathon',
       description: 'Champion in CITE Week Hackathon sept. 2024 at Phinma University of Iloilo',
       img: hackathonChampionImg,
-      link: ''  
+      link: 'https://drive.google.com/file/d/1auCtGE5eb5srFarw2dZbCiMSCzZIeTev/view?usp=sharing'  
     },
     {
       title: 'GameJam - Calle real ST.',
       description: "Best in narative & People's choice award",
       img: gamejamImg,
-      link: ''  
+      link: 'https://drive.google.com/file/d/1FaliRJ2OGCcXP1JWDeyvPf_TlchRUWr-/view?usp=sharing'  
     },
     {
       title: 'Stack League - Gold rush',
       description: 'Participated in Stack league stack trek celestial gold rush - 2023',
       img: stacktreckImg,
-      link: ''
+      link: 'https://drive.google.com/file/d/1S1Awoz7UeEre-9wRsC33-yF2fPQE9CSd/view?usp=sharing'
     },
     {
       title: '"JS Prom" JavaScript Programming - Completed',
       description: 'Successfully Completing the JS prom javascript workshop at Phinma University of Iloilo',
       img: jsCompletionImg,
-      link: ''
+      link: 'https://drive.google.com/file/d/1jIOFqT2h7kizgQUaNLkCtbvr7dB6DJFZ/view?usp=sharing'
     },
   ]
 
