@@ -18,6 +18,7 @@ const Skills = () => {
         { name: 'JavaScript', iconName: 'javascript' },
         { name: 'TypeScript', iconName: 'typescript' },
         { name: 'React', iconName: 'react' },
+        { name: 'React Native', iconName: 'reactnative' },
         { name: 'Next.js', iconName: 'nextjs' },
         { name: 'HTML', iconName: 'html' },
         { name: 'CSS', iconName: 'css' },
